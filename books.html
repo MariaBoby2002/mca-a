@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #fetchbooks, #search, #sorting {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        #books-container {
+            margin: 20px 0;
+        }
+
+        #books-container > div {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Library</h1>
+    </header>
+
+    <main>
+        <button id="fetchbooks">Fetch Books</button>
+        <input type="text" placeholder="Search book Name" id="search">
+        <select id="sorting">
+            <option value="asc">Name Ascending</option>
+            <option value="desc">Name Descending</option>
+        </select>
+        <div id="books-container"></div>
+        <div id="pagination-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Library</p>
+    </footer>
+
+   
